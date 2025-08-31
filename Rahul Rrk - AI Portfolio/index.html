@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/font/font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- custom css -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -66,7 +67,7 @@
                 <div class="container">  
                     <div class="banner-outline has-after">  
                         <div class="hero-banner img-holder has-after" style=" --width: 500; --height:800;" data-tilt>  
-                            <img src=" ./assets/images/hero-banner.jpg" width="500" height="680" alt="Drew Hays" class="img-cover">  
+                            <img src=" ./assets/images/hero-banner5.jpg"width="500" height="680" alt="Drew Hays" class="img-cover">  
                         </div>  
                         <span class="span title">Rahul RRk</span>  
                     </div>  
@@ -261,46 +262,96 @@
 
                         <div class="tab-content" data-tab-content="Skillset">
                             
-                            <div class="grid-list">
+                            <div class="grid-list skills-grid">
                                 <div class="skill-content">
                                     <h3 class="h4 title section-title">
                                        Code, Craft, and Capability
                                     </h3>
                                     <p class="section-text">
                                        A curious coder exploring the world of AI, full stack development, 
-                                       and algorithms — solving problems, building with Python, and 
+                                       and <br>algorithms — solving problems, building with Python, and 
                                        crafting digital experiences.
                                     </p> 
 
-                                    <ul class="skill-list">
-                                        <li>
-                                            <div class="skill-wrapper">
-                                                <span class="span">Website Development</span>
-                                                <span class="value">70%</span>
+                                    <div class="skills-tabs">
+                                        <div class="tab-buttons">
+                                            <button class="tab-btn active" data-tab="frontend">
+                                                <i class="fas fa-laptop-code"></i> Frontend
+                                            </button>
+                                            <button class="tab-btn" data-tab="backend">
+                                                <i class="fas fa-server"></i> Backend
+                                            </button>
+                                            <button class="tab-btn" data-tab="version-control">
+                                                <i class="fa-solid fa-database"></i> Database
+                                            </button>
+                                        </div>
+
+                                        <div class="tab-contents">
+                                            <!-- Frontend Skills -->
+                                            <div class="tab-content active" id="frontend">
+                                                <ul class="skills-list">
+                                                    <li class="skill-item">
+                                                        <span class="skill-name">HTML5</span>
+                                                        <span class="skill-level advanced">Advanced</span>
+                                                    </li>
+                                                    <li class="skill-item">
+                                                        <span class="skill-name">CSS3</span>
+                                                        <span class="skill-level intermediate">Intermediate</span>
+                                                    </li>
+                                                    <li class="skill-item">
+                                                        <span class="skill-name">JavaScript</span>
+                                                        <span class="skill-level intermediate">Intermediate</span>
+                                                    </li>
+                                                    <li class="skill-item">
+                                                        <span class="skill-name">React</span>
+                                                        <span class="skill-level intermediate">Intermediate</span>
+                                                    </li>
+                                                </ul>
                                             </div>
 
-                                            <div class="progress-bar">
-                                                <div class="progress-fill" style="width: 70%;"></div>
+                                            <!-- Backend Skills -->
+                                            <div class="tab-content" id="backend">
+                                                <ul class="skills-list">
+                                                    <li class="skill-item">
+                                                        <span class="skill-name">Python</span>
+                                                        <span class="skill-level advanced">Advanced</span>
+                                                    </li>
+                                                    <li class="skill-item">
+                                                        <span class="skill-name">Node.js</span>
+                                                        <span class="skill-level intermediate">Intermediate</span>
+                                                    </li>
+                                                    <li class="skill-item">
+                                                        <span class="skill-name">Java</span>
+                                                        <span class="skill-level intermediate">Intermediate</span>
+                                                    </li>
+                                                    <li class="skill-item">
+                                                        <span class="skill-name">Express.js</span>
+                                                        <span class="skill-level intermediate">Intermediate</span>
+                                                    </li><li class="skill-item">
+                                                        <span class="skill-name">Git & GitHub</span>
+                                                        <span class="skill-level intermediate">Intermediate</span>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                        </li>
 
-                                        <li>
-                                            <div class="skill-wrapper">
-                                                <span class="span">Design UI & UX</span>
-                                                <span class="value">80%</span>
+                                            <!-- Version Control -->
+                                            <div class="tab-content" id="version-control">
+                                                <ul class="skills-list">
+                                                    <li class="skill-item">
+                                                        <span class="skill-name">SQL</span>
+                                                        <span class="skill-level intermediate">Intermediate</span>
+                                                    </li>
+                                                    <li class="skill-item">
+                                                        <span class="skill-name">MongoDb</span>
+                                                        <span class="skill-level intermediate">Intermediate</span>
+                                                    </li>
+                                                    
+                                                </ul>
                                             </div>
-
-                                            <div class="progress-bar">
-                                                <div class="progress-fill" style="width: 80%;"></div>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             
-                                <figure class="skill-banner img-holder" style="--width: 570; --height: 420;" data-tilt>
-                                    <img src="./assets/images/skill-banner.jpg" width="570" height="420" loading="lazy" alt="skill banner"
-                                    class="img-cover">
-                                </figure>
                             </div>
                         </div>
                     
@@ -353,6 +404,13 @@
                                     <div class="award-card">
                                         <figure class="card-banner img-holder" style="--width: 534; --height: 383;" data-tilt>
                                             <img src="./assets/images/awward-3.jpg" width="534" height="383" loading="lazy" alt="certificate" class="img-cover">
+                                        </figure>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="award-card">
+                                        <figure class="card-banner img-holder" style="--width: 534; --height: 383;" data-tilt>
+                                            <img src="./assets/images/awward-4.png" width="534" height="383" loading="lazy" alt="certificate" class="img-cover">
                                         </figure>
                                     </div>
                                 </li>
@@ -501,7 +559,7 @@
 
                         </div>
                     </li>
-
+<!-- 
                     <li class="slider-item">
                         <div class="project-card text-center">
 
@@ -525,13 +583,13 @@
                             </div>
 
                         </div>
-                    </li>
+                    </li> -->
 
                     <li class="slider-item">
                         <div class="project-card text-center">
 
                             <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
-                                <img src="./assets/images/project-3.jpg" width="1000" height="763"
+                                <img src="./assets/images/chiron.png" width="1000" height="763"
                                     loading="lazy"
                                     alt="Project poster: Flutter Framework & Warframe Design"
                                     class="img-cover">
@@ -545,7 +603,7 @@
                                 <p class="card-subtitle">Chiron ai</p>
 
                                 <h3 class="title h3">
-                                    <a href="#" class="card-title">Creative & experienced digital design studio</a>
+                                    <a href="https://chiron-ai.onrender.com" class="card-title"> A Comprehensive Healthcare Assistant</a>
                                 </h3>
                             </div>
 
@@ -556,32 +614,7 @@
                         <div class="project-card text-center">
 
                             <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
-                                <img src="./assets/images/project-4.jpg" width="1000" height="763"
-                                    loading="lazy"
-                                    alt="Project poster: Full Web Development Project With JavaScript"
-                                    class="img-cover">
-                                
-                                <a href="#" class="btn btn:hover">
-                                    <span class="span">Project Details</span>
-                                </a>
-                            </div>
-
-                            <div class="card-content">
-                                <p class="card-subtitle">Portfolio</p>
-
-                                <h3 class="title h3">
-                                    <a href="#" class="card-title">Creative & experienced digital design studio</a>
-                                </h3>
-                            </div>
-
-                        </div>
-                    </li>
-
-                     <li class="slider-item">
-                        <div class="project-card text-center">
-
-                            <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
-                                <img src="./assets/images/project-5.jpg" width="1000" height="763"
+                                <img src="./assets/images/spotify.png" width="1000" height="763"
                                     loading="lazy"
                                     alt="Project poster: Cloud Migration & AWS Services"
                                     class="img-cover">
@@ -595,7 +628,7 @@
                                 <p class="card-subtitle">Spotify clone</p>
 
                                 <h3 class="title h3">
-                                    <a href="#" class="card-title">Creative & experienced digital design studio</a>
+                                    <a href="https://github.com/RahulRavulakolu/Spootify-clone" class="card-title">Creative & Responsive web music player</a>
                                 </h3>
                             </div>
 
@@ -617,7 +650,7 @@
                             <input type="email" name="email_address" placeholder="Email address" autocomplete="off" required
                             class="input-field">
                             <input type="tel" name="phone" placeholder="Phone" autocomplete="off" class="input-field">
-                            <textarea name="message" placeholder="Enter massges" required class="input-field"></textarea>
+                            <textarea name="message" placeholder="Enter message" required class="input-field"></textarea>
                             
                             <button type="submit" class="btn btn:hover">
                                 <span class="span">Send</span>
@@ -712,5 +745,36 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+    <!-- Skills Tabs Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Skills Tab Functionality
+            const tabBtns = document.querySelectorAll('.skills-tabs .tab-btn');
+            const tabContents = document.querySelectorAll('.skills-tabs .tab-content');
+
+            // Show first tab by default
+            if (tabContents.length > 0) {
+                tabContents[0].classList.add('active');
+            }
+            if (tabBtns.length > 0) {
+                tabBtns[0].classList.add('active');
+            }
+
+            // Tab switching functionality
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const tabId = btn.getAttribute('data-tab');
+                    
+                    // Remove active class from all buttons and contents
+                    tabBtns.forEach(btn => btn.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.remove('active'));
+                    
+                    // Add active class to clicked button and corresponding content
+                    btn.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html>

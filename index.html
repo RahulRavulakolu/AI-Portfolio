@@ -36,28 +36,36 @@
 
     <!-- header -->
     <header class="header active1" data-header>
-        <nav class="navbar">
-            <img src="/Rahul Rrk - AI Portfolio/assets/images/logo.png" style="height: 35px; width: 100px; mix-blend-mode: lighten;" alt="logo">
-            <div class="navbar2">
-                <ul>
-                    <!-- <li>
-                        <a href="" class="navabr-link">Resume</a>
-                    </li> -->
-                    <li>
-                        <a href="#about" class="navabr-link">About</a>
-                    </li>
-                    <li>
-                        <a href="#skillset" class="navabr-link">Tools</a>
-                    </li>
-                    <li>
-                        <a href="#project" class="navabr-link">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="navabr-link">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <img src="./assets/images/logo.png" style="height: 35px; width: 100px; mix-blend-mode: lighten;" alt="logo">
+                </a>
+                
+                <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggler>
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </button>
+                
+                <div class="navbar2" data-navbar>
+                    <ul class="navbar-list">
+                        <li class="navbar-item">
+                            <a href="#about" class="navbar-link">About</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#skillset" class="navbar-link">Tools</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#project" class="navbar-link">Projects</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#contact" class="navbar-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <!-- hero section -->
@@ -740,6 +748,7 @@
 
     <!-- custom js -->
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/navbar.js"></script>
 
     <!-- ion-icon link -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
